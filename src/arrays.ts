@@ -88,7 +88,7 @@ export function makeMath(addends: number[]): string {
  */
 export function injectPositive(values: number[]): number[] {
     const ind: number = values.findIndex(value => value < 0);
-    if (ind === -1) return [...values, values.reduce((a, b) => a + b, 0)];;
+    if (ind === -1) return [...values, values.reduce((a, b) => a + b, 0)];
     return [
         ...values.slice(0, ind + 1),
         values.slice(0, ind).reduce((a, b) => a + b, 0),
