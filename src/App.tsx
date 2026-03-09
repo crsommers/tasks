@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
-// import { ChangeType } from "./components/ChangeType";
-// import { RevealAnswer } from "./components/RevealAnswer";
-// import { StartAttempt } from "./components/StartAttempt";
-// import { TwoDice } from "./components/TwoDice";
-// import { CycleHoliday } from "./components/CycleHoliday";
+import { ChangeType } from "./components/ChangeType";
+import { RevealAnswer } from "./components/RevealAnswer";
+import { StartAttempt } from "./components/StartAttempt";
+import { TwoDice } from "./components/TwoDice";
+import { CycleHoliday } from "./components/CycleHoliday";
 import { Counter } from "./components/Counter";
 
 function App(): React.JSX.Element {
@@ -13,9 +13,9 @@ function App(): React.JSX.Element {
             <header className="App-header" style={ {backgroundColor: 'rgba(0, 54, 162, 1)'}}>
                 UD CISC275 with React Hooks and TypeScript
             </header>
-            <hr></hr>
+            <hr></hr>   
             <Counter></Counter>
-            {/* <hr />
+            <hr />
             <RevealAnswer></RevealAnswer>
             <hr />
             <StartAttempt></StartAttempt>
@@ -24,7 +24,7 @@ function App(): React.JSX.Element {
             <hr />
             <ChangeType></ChangeType>
             <hr />
-            <CycleHoliday></CycleHoliday> */}
+            <CycleHoliday></CycleHoliday>
         </div>
     );
 }

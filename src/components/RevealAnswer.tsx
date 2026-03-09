@@ -4,8 +4,8 @@ import { Button } from "react-bootstrap";
 export function RevealAnswer(): React.JSX.Element {
     const [hidden, setHidden] = useState<boolean>(false);
     return (
-        <span>
-            <Button onClick={(hidden) => {setHidden(!hidden)}}>Reveal Answer</Button>{hidden ? "42" : "*******"}
-        </span>
+        <div>
+            <Button onClick={() => {setHidden(!hidden)}}>Reveal Answer</Button>{hidden ? "42" : "*******"}
+        </div>
     );
 }
