@@ -7,9 +7,7 @@ export function CheckAnswer({
     expectedAnswer: string;
 }): React.JSX.Element {
     const [given, setGiven] = useState<string>("");
-    
     function updateGiven(event: React.ChangeEvent<HTMLInputElement>) { setGiven(event.target.value) }
-
     return (
         <div>
             <Form.Group controlId="formMovieName">
@@ -21,9 +19,7 @@ export function CheckAnswer({
                     onChange={updateGiven}
                 />
             </Form.Group>
-            {/* <label htmlFor="answer">Your answer: {given}</label> */}
-            {/* <input></input> */}
-            <text>{given === expectedAnswer ? '✔️' : '❌'} {given}</text>
+            <text>{given === expectedAnswer ? '✔️' : '❌'}{given}</text>
         </div>
     );
 }

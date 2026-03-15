@@ -12,8 +12,8 @@ export function MultipleChoiceQuestion({
     function updateAnswer(event: React.ChangeEvent<HTMLSelectElement>) { setAnswer(event.target.value) }
     return (
         <div>
-            <Form.Group controlId="userEmotions">
-                <Form.Label>How do you feel?</Form.Label>
+            <Form.Group controlId="multipleChoice">
+                <Form.Label>This is a mutliple choice question.</Form.Label>
                 <Form.Select value={answer} onChange={updateAnswer}>
                     {
                         options.map((option: string) => (
@@ -22,7 +22,7 @@ export function MultipleChoiceQuestion({
                     }
                 </Form.Select>
             </Form.Group>
-            <text>{answer === expectedAnswer ? '✔️' : '❌'} {answer}</text>
+            <text>{answer === expectedAnswer ? '✔️' : '❌'}{answer}</text>
         </div>
     );
 }
