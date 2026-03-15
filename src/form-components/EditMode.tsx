@@ -6,8 +6,6 @@ export function EditMode(): React.JSX.Element {
     const [student, setStudent] = useState<boolean>(true);
     const [name, setName] = useState<string>("Your Name");
 
-    student; setStudent; name; setName; 
-
     function updateEditing(event: React.ChangeEvent<HTMLInputElement>) {
         setEditing(event.target.checked)
     }
