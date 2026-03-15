@@ -22,7 +22,7 @@ export function MultipleChoiceQuestion({
                     }
                 </Form.Select>
             </Form.Group>
-            <text>{answer === expectedAnswer ? '✔️' : '❌'}{answer}</text>
+            <p>{answer === expectedAnswer ? '✔️' : '❌'}{answer}</p>
         </div>
     );
 }

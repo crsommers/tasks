@@ -14,14 +14,14 @@ export function ChangeColor(): React.JSX.Element {
                         name="color"
                         onChange={updateColor}
                         id={c}
-                        label={<text style={{backgroundColor: c}}>{c}</text>}
+                        label={<span style={{backgroundColor: c}}>{c}</span>}
                         value={c}
                         checked={color === c}
                     />
                     </label>
                 ))
             }
-            <p data-testid="colored-box">You have chosen <text style={{backgroundColor: color}}>{color}</text></p>
+            <p>You have chosen <span data-testid="colored-box" style={{backgroundColor: color}}>{color}</span></p>
         </div>
     );
 }

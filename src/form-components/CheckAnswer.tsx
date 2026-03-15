@@ -19,7 +19,7 @@ export function CheckAnswer({
                     onChange={updateGiven}
                 />
             </Form.Group>
-            <text>{given === expectedAnswer ? '✔️' : '❌'}{given}</text>
+            <p>{given === expectedAnswer ? '✔️' : '❌'}{given}</p>
         </div>
     );
 }
